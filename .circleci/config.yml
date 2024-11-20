@@ -6,7 +6,7 @@ orbs:
 jobs:
     build-and-test:
         docker: # image to run on
-            - image: cimg/node:18.12.1
+            - image: cimg/node:18.20.5
         resource_class: xlarge # how much CPU/RAM
         parallelism: 15 # nodes to split test suite over
         steps:
